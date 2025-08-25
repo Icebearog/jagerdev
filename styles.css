@@ -1,0 +1,202 @@
+* {
+    margin: 0.3%;  /*this is for the webpages margin, padding, and box-sizing*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*this is for the webpages colour back ground, text colour, and font*/
+    font-family: 'Montserrat', sans-serif;
+    background-color: #6cbfff;
+    color: #000000;
+    min-height: 100vh;
+    line-height: normal;
+}
+
+
+.layer-blur{ /*this is for the layer blur effect on the webpage*/
+    height: 0;
+    width: 40rem;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -25deg;
+    z-index: -1;
+}
+
+/* CONTAINER */
+.container {  /*this is for the container of the webpage*/
+    width:100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+
+/* HEADER */ 
+header {  /*this is for the header of the webpage*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -5%;
+}
+
+nav a {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: inherit; /* Inherit color from body */
+}
+
+nav a:hover {
+    color: #b0fffafa;
+}
+
+.btn-signing {
+    background-color: #feffec;
+    color: #000000;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    border : none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-signing:hover {
+    background-color: #b3fffc;
+}
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+}
+
+
+.content {
+    max-width: 40rem;
+    margin-left: 10%;
+    z-index: 999;
+}
+
+.tag-box {
+    position : relative;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #80ffe6, #50d9ff, #d8fdff, #80f7ff, #9dffe3, #ebff79);
+    animation: animationGradient 2.5s linear infinite;
+    background-size: 200%;
+    box-shadow: 0 0 15px, white;
+}
+@keyframes animationGradient {
+    0% {
+        background-position: 200%;
+
+    }
+}
+
+.tag-box .tag{ /*this is the tag box for the main heading*/
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6 ease;
+    cursor: pointer;
+}
+
+.tag-box .tag:hover {
+    color:#acedfc;
+}
+
+.content h1 {  /*this is the main heading for the webpage*/
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2rem 0;
+    margin: 2rem 0;
+    line-height: 1.2;
+    color: #ffffff;
+}
+@keyframes text-shadow {
+    0% {
+        text-shadow: 0 0 10px rgb(177, 255, 255);
+    }
+    50% {
+        text-shadow: 0 0 20px rgb(171, 255, 254);
+    }
+    100% {
+        text-shadow: 0 0 10px rgb(197, 240, 255);
+    }
+}
+
+.description {
+    font-size: 1.2rem;
+    letter-spacing:0.05em;
+    max-width: 35rem;
+    color:rgb(255, 255, 255)
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.btn-get-started {
+    text-decoration: none;
+    border: 1px solid hsl(0, 100%, 99%);
+    background-color: white;
+    color: #000000;
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0,1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-get-started:hover { /*this is the button for getting started*/
+    background-color: rgb(114, 231, 244);
+}
+
+.btn-signing-main{ /*this is the button for signing up*/
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 0.6rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0,1rem;
+    transition: background-color 0.2s ease;
+}
+
+.btn-signing-main:hover {
+    background-color: rgb(158, 250, 255);
+}
+
